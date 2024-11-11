@@ -1,0 +1,104 @@
+.grille{
+    display: grid;
+    grid-template-columns: 1fr 1fr 350px;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: blue;
+}
+nav{
+    background-image: url(../image/LuxBlackOrangeBackground.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px 25px 10px;
+    font-family: 'roboto';
+}
+.page{
+    display: flex;
+    gap: 15px;
+}
+.page div{
+    display: flex;
+    align-items: center;
+}
+#header{
+    grid-area: header;
+}
+#galKB2{
+    display: flex;
+}
+div.galerie:hover{
+    border: 2px solid rgb(64, 63, 63);
+}
+div.galerie img{
+    width: 100%;
+    height: auto;
+}
+div.description{
+    padding: 10px;
+    text-align: center;
+}
+.galerie{
+    margin: 5px;
+    border: 1px solid black;
+    width: 200px;
+}
+.titre{
+    margin-top: 10px;
+}
+p, li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    grid-area: main;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+#aside{
+    grid-area: aside;
+    padding: 0px 5px 0px 10px;
+    font-size: 15px; 
+}
+.asideKB2{
+    background-image: linear-gradient(rgb(236, 155, 26), black);
+}
+.asideCF{
+    background-image: linear-gradient(rgb(83, 81, 81), rgb(142, 101, 25));
+}
+.asideCOD{
+    background-image: linear-gradient(rgb(51, 49, 49), rgb(255, 181, 33));
+}
+.liste{
+    list-style: none;
+}
+#footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px 25px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imgFig{
+    max-width: 350px;
+    margin: auto;
+}
+figure{
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    width: fit-content;
+    float: left;
+}

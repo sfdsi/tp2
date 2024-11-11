@@ -38,7 +38,7 @@ nav{
     display: flex;
 }
 div.galerie:hover{
-    border: 2px solid rgb(64, 63, 63);
+    border: 3px solid black;
 }
 div.galerie img{
     width: 100%;

@@ -78,9 +78,6 @@ p, li{
 .asideCOD{
     background-image: linear-gradient(rgb(51, 49, 49), rgb(255, 181, 33));
 }
-.liste{
-    list-style: none;
-}
 #footer{
     grid-area: footer;
     background-color: black;
